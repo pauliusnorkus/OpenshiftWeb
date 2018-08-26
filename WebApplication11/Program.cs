@@ -20,7 +20,7 @@ namespace WebApplication11
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseKestrel(options => {
-                    options.Listen(System.Net.IPAddress.Loopback, 5080); //HTTP port
+                    options.Listen(System.Net.IPAddress.Loopback, 5000); //HTTP port
                 })
                 .UseStartup<Startup>();
     }
